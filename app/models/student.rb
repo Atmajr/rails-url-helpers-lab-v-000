@@ -7,7 +7,7 @@ class Student < ActiveRecord::Base
   end
 
   def init
-    self.active = true if self.active.nil?
+    self.active = false if self.active.nil?
   end
 
 end
